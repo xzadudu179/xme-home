@@ -1,7 +1,7 @@
 @import './base.css';
 
 :root {
-  --primary-color: #32AAC9;
+  --primary-color: #4f59d8;
 }
 
 #app {
@@ -12,16 +12,17 @@
   font-weight: normal;
 }
 
-#app main {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+body {
+  background: #fff;
+  background: url("https://image.179.life/images/background-light.jpg");
+  background-size: cover;
+  backdrop-filter: blur(75px);
+  margin: 0;
 }
 
-body {
-  /* background: #fff; */
-  background: url("https://image.179.life/images/background-dark.jpg");
-  background-size: cover;
-  backdrop-filter: blur(85px);
+@font-face {
+  font-family: 'Maiyuan';
+  src: url('fonts/maiyuan.otf');
+  font-weight: normal;
+  font-style: normal;
 }
