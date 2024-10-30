@@ -36,7 +36,7 @@ import IconNav from './components/IconNav.vue';
             |
             <IconNav name="C-sharp" icon-class="fa-brands fa-microsoft"></IconNav>
           </InfoItem>
-          <a class="bloglink" href="https://blog.xzadudu179.top">
+          <a class="bloglink" target="_blank" href="https://blog.xzadudu179.top">
             个人博客 >>
           </a>
         </div>
@@ -86,7 +86,7 @@ import IconNav from './components/IconNav.vue';
   }
 
   .card {
-    width: 880px;
+    width: 850px;
     max-width: 80%;
     /* height: 525px; */
     min-height: 300px;
@@ -133,9 +133,6 @@ import IconNav from './components/IconNav.vue';
     -webkit-mask-composite: destination-out;
   }
 
-  .card img {
-    display: block;
-  }
 
   .infos {
     padding: 40px 0;
@@ -146,6 +143,7 @@ import IconNav from './components/IconNav.vue';
 
   .avatar {
     /* height: 100%; */
+    margin: 20px 0;
     width: 40%;
     background: url("./assets/img/avatar.png");
     background-repeat: no-repeat;
