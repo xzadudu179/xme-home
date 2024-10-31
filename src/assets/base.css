@@ -15,28 +15,61 @@ a {
 
 :root {
   --header-color-light: rgb(67, 67, 107);
+  --glow-color-light: rgba(255, 247, 178, 0.5);
   --primary-color-light: #4f59d8;
-  --card-color-light: #fff;
-  --background-color-light: #eaeaea;
+  --card-color-light: #fafaff88;
+  --background-color-light: #f5f5ff;
   --color-text-light: rgb(48, 48, 73);
+  --text-info-color-light: rgb(136, 137, 223);
+  --button-border-color-light: #cdd2fd;
+  --button-color-light: #e6e6ff;
 }
 
 :root {
-  --header-color-dark: rgb(67, 67, 107);
-  --background-color-dark: #222;
-  --card-color-dark: #223;
+  --header-color-dark: rgb(192, 198, 255);
+  --glow-color-dark: rgba(224, 224, 255, 0.5);
   --primary-color-dark: #71aaff;
-  --color-text-dark: rgb(212, 223, 255);
+  --card-color-dark: #2238;
+  --background-color-dark: #222;
+  --color-text-dark: rgb(204, 209, 247);
+  --text-info-color-dark: rgb(147, 148, 207);
+  --button-border-color-dark: #3a3e5c;
+  --button-color-dark: #262635;
 }
 
-:root {
-  --color-text: var(--color-text-light)
+[data-theme="light"] {
+  --button-color: var(--button-color-light);
+  --button-border-color: var(--button-border-color-light);
+  --color-text: var(--color-text-light);
+  --background-color: var(--background-color-light);
+  --glow-color: var(--glow-color-light);
+  --card-color: var(--card-color-light);
+  --primary-color: var(--primary-color-light);
+  --header-color: var(--header-color-light);
+  --text-info-color: var(--text-info-color-light);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: var(--color-text-dark)
+    --color-text: var(--color-text-dark);
+    --background-color: var(--background-color-dark);
+    --glow-color: var(--glow-color-dark);
+    --card-color: var(--card-color-dark);
+    --primary-color: var(--primary-color-dark);
+    --header-color: var(--header-color-dark);
+    --text-info-color: var(--text-info-color-dark);
   }
+} */
+[data-theme="dark"] {
+  --button-color: var(--button-color-dark);
+  --button-border-color: var(--button-border-color-dark);
+  --color-text: var(--color-text-dark);
+  --background-color: var(--background-color-dark);
+  --glow-color: var(--glow-color-dark);
+  --card-color: var(--card-color-dark);
+  --primary-color: var(--primary-color-dark);
+  --header-color: var(--header-color-dark);
+  --text-info-color: var(--text-info-color-dark);
 }
 
 body {

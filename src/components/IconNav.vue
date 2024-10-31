@@ -37,4 +37,9 @@ const iconPadding = computed(() => `padding-left: ${props.padding ? props.paddin
   /* .iconitem i {
     line-height: 1em;
   } */
+  /* @media (max-width: 600px) {
+    .iconitem span {
+      display: none;
+    }
+  } */
 </style>
