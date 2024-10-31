@@ -1,3 +1,5 @@
+/*TODO: 主题切换功能*/
+
 *,
 *::before,
 *::after {
@@ -11,11 +13,36 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --header-color-light: rgb(67, 67, 107);
+  --primary-color-light: #4f59d8;
+  --card-color-light: #fff;
+  --background-color-light: #eaeaea;
+  --color-text-light: rgb(48, 48, 73);
+}
+
+:root {
+  --header-color-dark: rgb(67, 67, 107);
+  --background-color-dark: #222;
+  --card-color-dark: #223;
+  --primary-color-dark: #71aaff;
+  --color-text-dark: rgb(212, 223, 255);
+}
+
+:root {
+  --color-text: var(--color-text-light)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--color-text-dark)
+  }
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
-  background: var(--background-image);
+  /* background: url("https://image.179.life/images/background-light.jpg"); */
   margin: 0;
   transition:
     color 0.5s cubic-bezier(0.215, 0.610, 0.355, 1),
