@@ -31,6 +31,16 @@ body {
     padding-bottom: 20px;
     padding-top: 10px;
   }
+
+  body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 854px) {
+  body {
+    overflow: auto !important;
+  }
 }
 
 @font-face {

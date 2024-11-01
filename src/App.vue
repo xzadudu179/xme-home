@@ -102,7 +102,6 @@
   </footer>
 </template>
 
-
 <style scoped>
 
   /* .logo {
@@ -554,5 +553,4 @@
       content: "";
     }
   }
-
 </style>
