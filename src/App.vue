@@ -7,9 +7,9 @@
   const themeSwitchBtnClass = ref("fa-regular fa-moon-stars")
   const isDarkMode = ref(false);
   const checkPrefersColorScheme = () => {
-      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      isDarkMode.value = prefersDarkScheme;
-      console.log(isDarkMode.value)
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    isDarkMode.value = prefersDarkScheme;
+    console.log(isDarkMode.value)
   };
 
   watch(isDarkMode, (newValue) => {
@@ -23,18 +23,18 @@
   })
 
   const glowStyle = ref({
-      left: '0px',
-      top: '0px'
+    left: '0px',
+    top: '0px'
   });
 
   const updateGlowPosition = (event) => {
-      glowStyle.value.left = `${event.clientX - 250}px`;
-      glowStyle.value.top = `${event.clientY - 250}px`;
+    glowStyle.value.left = `${event.clientX - 250}px`;
+    glowStyle.value.top = `${event.clientY - 250}px`;
   };
 
   onMounted(() => {
-      document.addEventListener('mousemove', updateGlowPosition);
-      checkPrefersColorScheme();
+    document.addEventListener('mousemove', updateGlowPosition);
+    checkPrefersColorScheme();
   });
 
   onBeforeUnmount(() => {
@@ -298,6 +298,10 @@
   .findmenav:not(:last-child)::after {
     content: "|";
     /* padding-left: 0.5em; */
+  }
+  .findmenav:hover:not(:last-child)::after {
+    /* content: "|"; */
+    color: var(--color-text);
   }
 
   .avatar:hover {
