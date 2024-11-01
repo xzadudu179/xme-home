@@ -4,7 +4,7 @@
   import { ref, onMounted, onBeforeUnmount, watch } from 'vue';
 
   // 检查颜色主题
-  const themeSwitchBtnClass = ref("fa-regular fa-brightness")
+  const themeSwitchBtnClass = ref("fa-regular fa-moon-stars")
   const isDarkMode = ref(false);
   const checkPrefersColorScheme = () => {
       const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
