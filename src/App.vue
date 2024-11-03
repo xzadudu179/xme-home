@@ -141,8 +141,9 @@
     /* color: rgb(48, 48, 73); */
     /* color: rgb(212, 223, 255); */
     /* padding-top: 10px; */
+    padding-bottom: 15px;
     display: flex;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     place-items: center;
   }
@@ -181,7 +182,7 @@
     max-width: 500px;
     padding-top: 20px;
     font-size: 1.2em;
-    line-height: 0;
+    line-height: 1em;
     text-align: center;
   }
 
@@ -427,7 +428,7 @@
       width: max(90%, calc(100% - 20px));
       max-height: 320px;
       margin-top: 0;
-      height: calc(100% - 50px);
+      height: max(265px, calc(100% - 50px));
     }
     .container {
       height: 100%;

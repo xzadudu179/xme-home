@@ -37,7 +37,8 @@ a {
   --button-color-dark: #262635;
 }
 
-[data-theme="light"] {
+[data-theme="light"],
+:root {
   --button-color: var(--button-color-light);
   --button-border-color: var(--button-border-color-light);
   --color-text: var(--color-text-light);
