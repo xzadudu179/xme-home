@@ -1,0 +1,100 @@
+:root {
+    --header-color-dark: rgb(192, 198, 255);
+    --glow-color-dark: rgba(224, 224, 255, 0.5);
+    --primary-color-dark: #71aaff;
+    --card-color-dark: #2238;
+    --background-color-dark: #222;
+    --color-text-dark: rgb(204, 209, 247);
+    --text-info-color-dark: rgb(147, 148, 207);
+    --button-border-color-dark: #3a3e5c;
+    --button-color-dark: #262635;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    /* background: url("https://image.179.life/images/background-light.jpg"); */
+    margin: 0;
+    transition:
+        color 0.5s cubic-bezier(0.215, 0.610, 0.355, 1),
+        background-color 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    line-height: 1.6;
+    font-family:
+        'Geist Variable',
+        -apple-system,
+        BlinkMacSystemFont,
+        'PingFang SC',
+        'Microsoft YaHei',
+        'Heiti SC',
+        'WenQuanYi Micro Hei',
+        sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.title * {
+    color: var(--color-text-dark);
+    text-align: center;
+    /* text-shadow: 0 0 3px rgb(206, 206, 255); */
+}
+
+.title a {
+    display: block;
+    background-color: var(--button-color-dark);
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid;
+    transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.title a:hover {
+    color: var(--primary-color-dark)
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.info {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    background: #00010c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

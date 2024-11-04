@@ -114,9 +114,9 @@
 
   #darken-btn {
     z-index: 100;
-    position: absolute;
-    right: 50px;
-    top: 50px;
+    position: fixed;
+    right: min(2rem, 20vw);
+    top: min(2rem, 10vh);
   }
 
   /* #dark-mode:checked + #darkmode-label i {
@@ -403,12 +403,7 @@
     .avatar:hover {
       background-image: url("/src/assets/img/avatar2.png");
     }
-    #darken-btn {
-      z-index: 100;
-      position: absolute;
-      right: 60px;
-      top: 50px;
-    }
+
     #chac-name {
       font-size: 2.3em;
     }
