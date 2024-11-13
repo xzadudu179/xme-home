@@ -210,7 +210,7 @@
     max-width: 850px;
     overflow: hidden;
     /* padding-right: 10px; */
-    padding-left: 5px;
+    /* padding-left: 5px; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -277,6 +277,7 @@
   .avatar {
     /* height: 100%; */
     margin: 20px 0;
+    margin-left: 5px;
     width: 40%;
     background: url("./assets/img/avatar.png");
     background-repeat: no-repeat;
