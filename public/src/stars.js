@@ -33,7 +33,7 @@ let canvas=document.getElementById('canvas'),
             }
             [_getRandomAlpha](){
                 let alpha=(Math.floor(Math.random()*10)+1)/10;
-                return `rgba(${Math.min(Math.floor(Math.random() * 100) + 155, 255)},${Math.min(Math.floor(Math.random() * 100) + 155, 255)},${Math.min(Math.floor(Math.random() * 100) + 155, 255)},` + alpha + ")";
+                return `rgba(${Math.min(Math.floor(Math.random() * 240) + 15, 255)},${Math.min(Math.floor(Math.random() * 220) + 35, 255)},${Math.min(Math.floor(Math.random() * 200) + 55, 255)},` + alpha + ")";
             }
 
             draw(){
