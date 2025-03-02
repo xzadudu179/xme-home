@@ -9,7 +9,7 @@
   const checkPrefersColorScheme = () => {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
     isDarkMode.value = prefersDarkScheme;
-    console.log(isDarkMode.value)
+    // console.log(isDarkMode.value)
   };
 
   watch(isDarkMode, (newValue) => {
