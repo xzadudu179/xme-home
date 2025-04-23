@@ -1,4 +1,4 @@
-<script setup>
+lea<script setup>
   import InfoItem from './components/InfoItem.vue';
   import IconNav from './components/IconNav.vue';
   import { ref, onMounted, onBeforeUnmount, watch } from 'vue';
@@ -67,7 +67,7 @@
               <template #title>
                 个人介绍:
               </template>
-              <p>一只兽兽 owo</p>
+              <p>一只兽兽（furry） owo</p>
               <p>想被别人发现，希望尝试新的东西</p>
               <p>喜欢太空、科幻、像素风格一类的东西~</p>
               <p>想做全栈，想展示自己的世界观（？</p>
@@ -450,6 +450,7 @@
     .bloglink::after {
       content: ">>";
     }
+
   }
 
   @media (max-width: 600px){
