@@ -67,8 +67,8 @@ lea<script setup>
               <template #title>
                 个人介绍:
               </template>
-              <p>一只兽兽（furry） owo</p>
-              <p>想被别人发现，希望尝试新的东西</p>
+              <p>正在四处游荡中...</p>
+              <p>想被别人发现，喜欢尝试新的事物</p>
               <p>喜欢太空、科幻、像素风格一类的东西~</p>
               <p>想做全栈，想展示自己的世界观（？</p>
             </InfoItem>
